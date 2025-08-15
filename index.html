@@ -1,132 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Furqan Ul Arsh | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Muhammad Furqan Ul Arsh — Mechanical Engineer | Robotics • Renewable Energy</title>
+  <meta name="description" content="Muhammad Furqan Ul Arsh — aspiring mechanical engineer focused on robotics, renewable energy and experimental research. See projects, skills and contact details." />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Muhammad Furqan Ul Arsh — Mechanical Engineer" />
+  <meta property="og:description" content="Robotics, Renewable Energy & Experimental Research — portfolio of Muhammad Furqan Ul Arsh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <!-- Replace with your real image -->
+  <meta property="og:image" content="https://yourdomain.com/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Performance & fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Furqan Ul Arsh",
+    "jobTitle": "Aspiring Mechanical Engineer",
+    "url": "https://yourdomain.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/muhammad-furqan-ul-arsh"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "Pakistan"
+    },
+    "telephone": "+923275520746",
+    "email": "furqanularsh@gmail.com"
+  }
+  </script>
+
+  <style>
+    /* Small inline critical CSS for fast paint (keeps header & hero layout stable until full CSS loads) */
+    :root{--accent:#00ffcc;--bg:#0a0a0a}
+    html,body{height:100%;margin:0;background:var(--bg);font-family:'Fira Code',monospace}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:8px;top:8px;width:auto;height:auto;padding:.5rem .75rem;background:#fff;color:#000;border-radius:4px;z-index:9999}
+    header{position:sticky;top:0;backdrop-filter:blur(8px)}
+  </style>
 </head>
 <body>
-    <!-- Particle Network Background -->
-    <canvas id="bg"></canvas>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <h1 class="logo">Furqan Ul Arsh</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Canvas background for Three.js network (must be present early) -->
+  <canvas id="bg" aria-hidden="true"></canvas>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2 id="typed"></h2>
-        <p class="tagline">Mechanical Engineer | Robotics | Renewable Energy | Experimental Research</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
+  <!-- Top banner / Header -->
+  <header role="banner" aria-label="Main header">
+    <nav class="nav" role="navigation" aria-label="Primary navigation">
+      <div class="nav-inner" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;">
+        <a class="logo" href="/" aria-label="Home — Muhammad Furqan Ul Arsh">Furqan Ul Arsh</a>
 
-    <!-- About -->
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-            Hands-on Mechanical Engineering student with practical experience in robotics, renewable energy 
-            systems, SolidWorks-based mechanical design, and experimental research. Proven leader in multi-
-            member engineering projects for publication and competition, including designing mechanical 
-            systems from scratch. Strong in embedded systems (Arduino/C++), sensor integration, CAD 
-            (SolidWorks, AutoCAD), basic CFD/Ansys workflows, and creative design fields including graphic 
-            design and web development.
-        </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" data-aos="fade-up">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div>
-                <h3>Engineering & Hardware</h3>
-                <p>Embedded systems (Arduino), motor control, sensors, PCB prototyping, CNC fabrication, wiring</p>
-            </div>
-            <div>
-                <h3>Software & Simulation</h3>
-                <p>C++, Python, SolidWorks, AutoCAD, Ansys, CFD, LabVIEW</p>
-            </div>
-            <div>
-                <h3>Design & Creative</h3>
-                <p>Photoshop, Illustrator, Canva, UI/UX, responsive web design</p>
-            </div>
-            <div>
-                <h3>Renewables</h3>
-                <p>Solar PV basics, single-axis tracker design, installation planning</p>
-            </div>
-            <div>
-                <h3>Soft Skills</h3>
-                <p>Leadership, teamwork, communication, project management</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" data-aos="fade-up">
-        <h2>Experience</h2>
-        <div class="exp-item">
-            <h3>External Relations Executive — NCBS (2024–25)</h3>
-            <p>Managed external communications and partnerships. Helped plan “Love Struck” event.</p>
-        </div>
-        <div class="exp-item">
-            <h3>Research Team Lead — Graphene-based Nanoparticles & Biofuels</h3>
-            <p>Led review article team. Coordinated literature synthesis for publication.</p>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" data-aos="fade-up">
-        <h2>Projects</h2>
-        <ul>
-            <li><b>Sumo Wars Robot:</b> Mechanical design, Arduino coding, CNC chassis</li>
-            <li><b>Autonomous Car:</b> Arduino vehicle with ultrasonic sensors</li>
-            <li><b>Solar Tracker:</b> Single-axis PV tracker with sensor feedback</li>
-            <li><b>Popsicle Stick Tower:</b> Load capacity 50 kg</li>
-            <li><b>Rubber-Powered Aircraft:</b> 120 cm flight</li>
-            <li><b>Rotor Test Bench:</b> Structural analysis, thrust/torque instrumentation</li>
-            <li><b>Pyrolysis Research:</b> Plastic pyrolysis for upcycling</li>
+        <!-- Desktop links -->
+        <ul class="nav-links" role="menubar" aria-label="Primary">
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+          <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+          <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+          <li role="none"><a role="menuitem" href="#education">Education</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
         </ul>
+
+        <!-- Mobile hamburger -->
+        <button id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation" class="hamburger" style="background:none;border:0;color:inherit;font:inherit;cursor:pointer;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile panel (visually hidden on desktop via CSS) -->
+      <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" role="main" tabindex="-1">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner" style="max-width:1100px;margin:0 auto;padding:8rem 1.25rem 6rem;text-align:center">
+        <h1 id="hero-heading" style="font-size:clamp(1.6rem,2.6vw + 1rem,3rem);margin-bottom:.6rem;color:#eaf7ff">
+          <span id="typed" aria-live="polite">Muhammad Furqan Ul Arsh</span>
+        </h1>
+        <p class="tagline" style="margin:0 auto;color:#b8c7e6;max-width:900px">
+          Mechanical Engineer — Robotics • Renewable Energy • Experimental Research
+        </p>
+        <div style="margin-top:2rem">
+          <a class="btn" href="#projects">View Projects</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" data-aos="fade-up">
-        <h2>Education</h2>
-        <p><b>Bachelor of Mechanical Engineering</b> — NUST (Ongoing)</p>
-        <p>CGPA: 3.59 | Sensors & Control, Dynamics, Fluid Mechanics, CAD, Thermodynamics</p>
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading" class="card-section" data-aos="fade-up">
+      <div style="max-width:1100px;margin:0 auto;">
+        <h2 id="about-heading">About Me</h2>
+        <div class="card" style="padding:1.25rem">
+          <p>
+            Hands-on Mechanical Engineering student with practical experience in robotics, renewable energy systems,
+            SolidWorks-based mechanical design, and experimental research. Proven leader in multi-member engineering
+            projects for publication and competition, including designing mechanical systems from scratch. Strong in
+            embedded systems (Arduino/C++), sensor integration, CAD (SolidWorks, AutoCAD), basic CFD/Ansys workflows,
+            and creative design fields including graphic design and web development.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>📍 Islamabad, Pakistan</p>
-        <p>📞 <a href="tel:+923275520746">+92-327-5520746</a></p>
-        <p>✉ <a href="mailto:furqanularsh@gmail.com">furqanularsh@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-furqan-ul-arsh" target="_blank">LinkedIn</a></p>
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading" class="card-section" data-aos="fade-up">
+      <div style="max-width:1100px;margin:0 auto;">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills-grid" role="list">
+          <article class="card skill" role="listitem" aria-labelledby="skill-1">
+            <h3 id="skill-1">Engineering & Hardware</h3>
+            <p>Embedded systems (Arduino), motor control (BTS7960/IBT-2), sensors (HC‑SR04, TCRT5000), PCB prototyping, CNC fabrication, prototyping & test rigs.</p>
+          </article>
+
+          <article class="card skill" role="listitem" aria-labelledby="skill-2">
+            <h3 id="skill-2">Software & Simulation</h3>
+            <p>C++, Python, SolidWorks (3D modeling & assemblies), AutoCAD, Ansys / CFD basics, LabVIEW, MS Excel.</p>
+          </article>
+
+          <article class="card skill" role="listitem" aria-labelledby="skill-3">
+            <h3 id="skill-3">Design & Creative</h3>
+            <p>Adobe Photoshop, Illustrator, Canva, UI/UX basics, responsive web design (HTML/CSS), WordPress.</p>
+          </article>
+
+          <article class="card skill" role="listitem" aria-labelledby="skill-4">
+            <h3 id="skill-4">Renewables & Field Work</h3>
+            <p>Solar PV fundamentals, single-axis solar tracker design, site assessment & installation planning.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Muhammad Furqan Ul Arsh. All Rights Reserved.</p>
-    </footer>
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="experience-heading" class="card-section" data-aos="fade-up">
+      <div style="max-width:1100px;margin:0 auto;">
+        <h2 id="experience-heading">Experience</h2>
+        <div class="exp">
+          <article class="card exp-item" aria-labelledby="exp-1">
+            <h3 id="exp-1">External Relations Executive — NCBS <span style="color:var(--muted);font-weight:400"> (2024–25)</span></h3>
+            <p>Managed external communications and partnerships for college society events. Helped plan and execute outreach events including "Love Struck".</p>
+          </article>
 
-    <!-- Scripts in the correct order -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
-    <script src="bg.js"></script>
-    <script src="script.js"></script>
+          <article class="card exp-item" aria-labelledby="exp-2">
+            <h3 id="exp-2">Research Team Lead — Graphene-based Nanoparticles & Biofuels</h3>
+            <p>Led literature review and manuscript preparation for review on graphene‑based nanoparticles in CI engine biofuels. Coordinated research & writing towards publication.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (gallery-ready) -->
+    <section id="projects" aria-labelledby="projects-heading" class="card-section" data-aos="fade-up">
+      <div style="max-width:1100px;margin:0 auto;">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="projects">
+          <ul>
+            <li class="card"><strong>Sumo Wars Robot — NERC:</strong> SolidWorks mechanical design, Arduino control (Mega/Nano) with IBT‑2 motor drivers, multi-sensor integration, CNC metal chassis.</li>
+            <li class="card"><strong>Autonomous Obstacle-Avoiding Car:</strong> Arduino-based vehicle with ultrasonic sensor array and reactive control logic.</li>
+            <li class="card"><strong>Solar Tracker:</strong> Single-axis solar PV tracker prototype with sensor feedback and actuator control.</li>
+            <li class="card"><strong>Popsicle Stick Tower:</strong> Structural optimization; < 40 cm tower that carried 50 kg load.</li>
+            <li class="card"><strong>Rubber-Powered Aircraft:</strong> Lightweight airframe design (~120 cm wingspan), balancing and flight testing.</li>
+            <li class="card"><strong>Rotor Test Bench (Lead):</strong> Designed rotor performance test bench; instrumentation for thrust/torque/RPM & SolidWorks assembly.</li>
+            <li class="card"><strong>Pyrolysis Research:</strong> Experimental pyrolysis of thermoplastics for stream analysis & upcycling.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="education-heading" class="card-section" data-aos="fade-up">
+      <div style="max-width:1100px;margin:0 auto;">
+        <h2 id="education-heading">Education</h2>
+        <div class="card">
+          <p><strong>Bachelor of Engineering — Mechanical Engineering (NUST)</strong> — Started Sep 2023 (Ongoing) • CGPA: 3.59</p>
+          <p>Relevant coursework: Sensors & Control Systems, Instrumentation & Measurements, Dynamics, Fluid Mechanics, CAD & Manufacturing, Thermodynamics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading" class="card-section" data-aos="fade-up">
+      <div style="max-width:900px;margin:0 auto;">
+        <h2 id="contact-heading">Contact</h2>
+
+        <div class="card contact-card" style="display:grid;gap:.75rem;padding:1.25rem">
+          <p>📍 Islamabad, Pakistan</p>
+          <p>📞 <a href="tel:+923275520746">+92‑327‑5520746</a></p>
+          <p>✉ <a href="mailto:furqanularsh@gmail.com">furqanularsh@gmail.com</a></p>
+          <p>🔗 <a href="https://www.linkedin.com/in/muhammad-furqan-ul-arsh" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+
+        <!-- Progressive contact form (works without JS when using a backend) -->
+        <form id="contactForm" class="card" style="margin-top:1rem;padding:1rem" method="post" action="#" novalidate>
+          <label for="name" class="visually-hidden">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required style="width:100%;padding:.6rem;border-radius:6px;border:1px solid var(--border);margin-bottom:.6rem" />
+
+          <label for="email" class="visually-hidden">Your email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required style="width:100%;padding:.6rem;border-radius:6px;border:1px solid var(--border);margin-bottom:.6rem" />
+
+          <label for="message" class="visually-hidden">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" required rows="6" style="width:100%;padding:.6rem;border-radius:6px;border:1px solid var(--border);margin-bottom:.6rem"></textarea>
+
+          <button type="submit" class="btn" style="padding:.7rem 1rem;border-radius:6px">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo" style="padding:2rem 1rem;text-align:center;border-top:1px solid rgba(255,255,255,0.03);color:#8da3c7">
+    <div style="max-width:1100px;margin:0 auto">
+      <small>&copy; 2025 Muhammad Furqan Ul Arsh — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- noscript fallback -->
+  <noscript>
+    <div style="background:#111;padding:12px;color:#fff;text-align:center">
+      JavaScript is disabled. For full interactive experience (3D background & animations) enable JavaScript.
+    </div>
+  </noscript>
+
+  <!-- Inline micro-script: mobile nav toggle & a11y helpers (keeps HTML usable until script.js loads) -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('navToggle');
+      const panel = document.getElementById('mobileNav');
+      if (!toggle || !panel) return;
+      toggle.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        panel.setAttribute('aria-hidden', String(expanded));
+        panel.style.display = expanded ? 'none' : 'block';
+        if (!expanded) {
+          // focus first link for keyboard users
+          const firstLink = panel.querySelector('a');
+          if (firstLink) firstLink.focus();
+        }
+      });
+      // Hide panel on small-screen load (CSS will normally handle it)
+      panel.style.display = 'none';
+    })();
+  </script>
+
+  <!-- Scripts: order is important. Defer keeps HTML parsing non-blocking and preserves order -->
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+
+  <!-- Local scripts (bg.js depends on THREE, script.js depends on AOS/Typed/GSAP) -->
+  <script defer src="bg.js"></script>
+  <script defer src="script.js"></script>
 </body>
-</html>
+            </html>
