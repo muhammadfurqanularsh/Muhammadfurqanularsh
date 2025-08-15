@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Furqan Ul Arsh | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="bg"></canvas>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1 class="logo">Furqan Ul Arsh</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 id="typed"></h2>
+        <p class="tagline">Mechanical Engineer | Robotics | Renewable Energy | Experimental Research</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+            Hands-on Mechanical Engineering student with practical experience in robotics, renewable energy 
+            systems, SolidWorks-based mechanical design, and experimental research. Proven leader in multi-
+            member engineering projects for publication and competition, including designing mechanical 
+            systems from scratch. Strong in embedded systems (Arduino/C++), sensor integration, CAD 
+            (SolidWorks, AutoCAD), basic CFD/Ansys workflows, and creative design fields including graphic 
+            design and web development.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <h3>Engineering & Hardware</h3>
+                <p>Embedded systems (Arduino), motor control (BTS7960/IBT-2), sensors, PCB prototyping, CNC fabrication, electronics & wiring, prototyping, test rigs</p>
+            </div>
+            <div>
+                <h3>Software & Simulation</h3>
+                <p>C++, Python, SolidWorks, AutoCAD, Ansys, CFD, LabVIEW, MS Excel</p>
+            </div>
+            <div>
+                <h3>Design & Creative</h3>
+                <p>Adobe Photoshop, Illustrator, Canva, UI/UX, responsive web design, HTML, CSS, WordPress</p>
+            </div>
+            <div>
+                <h3>Renewables & Field Work</h3>
+                <p>Solar PV basics, single-axis tracker design, site assessment, installation planning</p>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <p>Leadership, teamwork, communication, project management, creative problem-solving</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" data-aos="fade-up">
+        <h2>Experience</h2>
+        <div class="exp-item">
+            <h3>External Relations Executive — NCBS (2024–25)</h3>
+            <p>Managed external communications and partnerships for events. Helped plan and execute “Love Struck” focusing on emotional intelligence & productivity.</p>
+        </div>
+        <div class="exp-item">
+            <h3>Research Team Lead — Graphene-based Nanoparticles & Biofuels</h3>
+            <p>Led literature review & writing for review article on graphene-based nanoparticles in CI engine biofuels. Coordinated synthesis for publication phase.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>Sumo Wars Robot — NERC:</b> Mechanical design, Arduino coding, multi-sensor integration, CNC chassis</li>
+            <li><b>Autonomous Obstacle-Avoiding Car:</b> Arduino vehicle with ultrasonic sensors</li>
+            <li><b>Solar Tracker:</b> Single-axis PV tracker with sensor feedback</li>
+            <li><b>Popsicle Stick Tower:</b> 50 kg load capacity with <40 cm design</li>
+            <li><b>Rubber-Powered Aircraft:</b> 120 cm flight airframe design & testing</li>
+            <li><b>Rotor Test Bench (Lead):</b> Structural analysis, thrust/torque instrumentation</li>
+            <li><b>Pyrolysis Research:</b> Plastic pyrolysis for product upcycling</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <p><b>Bachelor of Mechanical Engineering</b> — NUST, Islamabad (Ongoing)</p>
+        <p>CGPA: 3.59 | Relevant Coursework: Sensors & Control, Dynamics, Fluid Mechanics, CAD, Thermodynamics</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>📍 Islamabad, Pakistan</p>
+        <p>📞 <a href="tel:+923275520746">+92-327-5520746</a></p>
+        <p>✉ <a href="mailto:furqanularsh@gmail.com">furqanularsh@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-furqan-ul-arsh" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Furqan Ul Arsh. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+    <script src="bg.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
